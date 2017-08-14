@@ -4,7 +4,10 @@ import java.beans.Statement;
 import java.sql.Connection;
 
 import util.JdbcUtil;
+
 import java.sql.*;
+
+import entity.User;
 
 public class UserDaoImpl implements UserDao{
 
@@ -23,6 +26,12 @@ public class UserDaoImpl implements UserDao{
 			// TODO: handle exception
 			e.printStackTrace();
 		}
+	}
+
+	@Override
+	public User findByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
